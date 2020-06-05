@@ -1,109 +1,148 @@
 #page-create-point {
-    width: 90%;
-    max-width: 1100px;
+  width: 90%;
+  max-width: 1100px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #page-create-point header {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 #page-create-point header a {
-    color: var(--titleColor);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  color: var(--titleColor);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 #page-create-point header a span {
-    margin-right: 16px;
-    background-image: url('../assets/arrow-left.svg');
-    display: flex;
-    width: 24px;
-    height: 24px;
+  margin-right: 16px;
+  background-image: url('../assets/arrow-left.svg');
+  display: flex;
+  width: 24px;
+  height: 24px;
 }
 
 #page-create-point form {
-    background-color: #fff;
-    padding: 64px;
-    border-radius: 8px;
-    max-width: 730px;
-    box-sizing: border-box;
-    margin: 80px auto;
+  background-color: #fff;
+  padding: 64px;
+  border-radius: 8px;
+  max-width: 730px;
+  box-sizing: border-box;
+  margin: 80px auto;
 }
 
 #page-create-point form h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 #page-create-point form fieldset {
-    margin-top: 64px;
-    border: 0ch;
+  margin-top: 64px;
+  border: 0ch;
 }
 
 #page-create-point form legend {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #page-create-point form legend h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #page-create-point form .field {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 #page-create-point form .field-group {
-    display: flex;
+  display: flex;
 }
 
 #page-create-point form input,
 #page-create-point form select {
-    background-color: #f0f0f5;
-    border: 0;
-    padding: 16px 24px;
-    font-size: 16px;
-    border-radius: 8px;
+  background-color: #f0f0f5;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 8px;
 
-    /* outline: none; */
+  /* outline: none; */
 }
 
 #page-create-point form select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #page-create-point form label {
-    font-size: 14px;
-    margin-bottom: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 #page-create-point form .field-group .field + .field {
-    margin-left: 24px;
+  margin-left: 24px;
+}
+
+#page-create-point form .items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+#page-create-point form .items-grid li {
+  background-color: #f5f5f5;
+  list-style: none;
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+  height: 180px;
+  padding: 32px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+#page-create-point form .items-grid li span {
+  margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--titleColor);
+}
+
+#page-create-point form .items-grid li.selected {
+  background-color: #e1fabc;
+  border: 2px solid #34cb79;
+}
+
+#page-create-point form .items-grid li img,
+#page-create-point form .items-grid li span {
+  pointer-events: none;
 }
 
 #page-create-point form button {
-    width: 260px;
-    height: 56px;
-    background-color: var(--primaryColor);
-    border-radius: 8px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    border: 0ch;
-    margin-top: 40px;
-    transition: background-color 400ms;
+  width: 260px;
+  height: 56px;
+  background-color: var(--primaryColor);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0ch;
+  margin-top: 40px;
+  transition: background-color 400ms;
 }
 
 #page-create-point form button:hover {
-    background: #2fb86e;
-    cursor: pointer;
+  background: #2fb86e;
+  cursor: pointer;
 }
