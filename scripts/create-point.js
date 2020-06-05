@@ -22,13 +22,16 @@ const getCities = (event) => {
   console.log(indexOfSelectedUf)
   ufInput.value = event.target.options[indexOfSelectedUf].text
 
+  citySelect.innerHTML = '<option value>Selecione a Cidade</option>'
+  citySelect.disabled = true
+
   fetch(
     `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`
   )
     .then((res) => res.json())
     .then((cities) => {
       cities.forEach((citie) => {
-        citySelect.innerHTML += `<option value=${citie.id}>${citie.nome}</option>`
+        citySelect.innerHTML += `<option value=${citie.nome}>${citie.nome}</option>`
       })
 
       citySelect.disabled = false
